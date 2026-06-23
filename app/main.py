@@ -48,7 +48,7 @@ class Dictionary:
             current_node = self.table[index]
 
             if current_node is None:
-                raise KeyError(key)
+                raise KeyError(f"Key {key} not found in Dictionary.")
 
             if current_node.key == key:
                 return current_node.value
